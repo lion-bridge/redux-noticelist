@@ -9,4 +9,9 @@
 
 ## 相关问题
 - 1.redux其实就是一种观察者模式，那么如何手写一个观察者模式呢？
-- 2.
+- 2.`store`最好写成单例模式，无论怎么取都是同一个state
+
+## 在nodejs中使用ES6语法的`import`和`export`
+nodejs支持`Commonjs`语法，对于ES6的语法支持在9.0版本之后增加。
+
+如果想在node9以后支持`import`和`export`语法，需要将文件后缀名改为`.mjs`,例如`index.js`改为`index.mjs`
