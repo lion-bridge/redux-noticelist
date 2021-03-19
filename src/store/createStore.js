@@ -11,7 +11,7 @@ export const createStore = (reducer) => {
         },
         dispatch: (action) => {
             state = reducer(state, action);
-            listeners.forEach(listener => listener());
+            listeners.forEach(listener => listener());  
         },
         subscribe: (callback) => {
             listeners.push(callback) 

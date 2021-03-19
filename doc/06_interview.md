@@ -4,3 +4,7 @@
 
 ### react必知的一些概念
 - 1.[React Fiber是什么](https://zhuanlan.zhihu.com/p/26027085)
+
+
+### js基础知识
+- 1.[测试js基础知识-github项目](https://github.com/lydiahallie/javascript-questions)
