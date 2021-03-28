@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from "./store/createStore";
-import reducer from "./store/reducer";
+import Store from './store'
 
-export const store = createStore(reducer);
+export const store = Store();
 const render = () => {
   ReactDOM.render(
     <React.StrictMode>

@@ -9,12 +9,19 @@ export const createStore = (reducer) => {
         getState:() => {
             return state
         },
+        /**
+         * 发送一个action
+         * @param {Object} action 
+         */
         dispatch: (action) => {
             state = reducer(state, action);
-            listeners.forEach(listener => listener());  
+            listeners.forEach(listener => listener()); 
         },
         subscribe: (callback) => {
-            listeners.push(callback) 
+            listeners.push(callback);
+            return () => {
+                listeners = listeners.filter(fn => fn !== callback);
+            }
         }
     }
 }

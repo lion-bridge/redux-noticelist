@@ -1,8 +1,11 @@
 import { createStore } from "./createStore";
+import reducers from './reducers';
+import combineReducers from './combineReducers';
 
-const getSingleton = function(fn){
-    let singleton;
-    return () => singleton || (singleton = createStore.apply(this, arguments))
-}
 
-const store = getSingleton(createStore);
+const Store = (function(func, reducer){
+    let singleton = func.apply(this, [reducer, ...arguments]);
+    return () => singleton || (singleton = func.apply(this, [reducer, ...arguments]))
+})(createStore, combineReducers(reducers))
+
+export default Store;
