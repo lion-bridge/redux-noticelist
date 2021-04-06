@@ -8,7 +8,7 @@
 - [源码](#源码)
 
 
-[参照上一篇文章的例子，我们使用redux+react实现一个购物页面]()
+[参照上一篇文章的例子，我们使用redux+react实现一个购物页面](https://blog.csdn.net/w440149517/article/details/115076403)
 ![图片](https://img-blog.csdnimg.cn/20210322140353714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3c0NDAxNDk1MTc=,size_16,color_FFFFFF,t_70)
 
 ## 0.业务代码

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        p {
+            color: white;
+            margin: 0;
+            padding: 0;
+            
+        }
+        div:nth-child(1){
+            overflow: hidden;
+            height: 50px;
+            background: lightblue;
+        }
+        div:nth-child(1) :nth-child(1){
+            background: orangered;
+            float: left;
+        }
+        div:nth-child(1) :nth-child(2){
+            background: blue;
+            float: left;
+        }
+        div:nth-child(2){
+            height: 60px;
+            background: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- overflow:hidden清浮动 -->
+    <!-- <div>
+        <p>内容1</p>
+        <p>浮动元素</p>
+    </div>
+    <div>底部元素</div> -->
+    <!-- overflow:hidden清浮动 -->
+
+
+    <div style="overflow: hidden;">
+        <p>浮动元素1</p>
+        <p>浮动元素2</p>
+        <div style="clear: both;"></div>
+    </div>
+    <div>底部元素</div>
+</body>
+<script>
+    var div = document.getElementById('_div')
+    document.getElementsByName()
+</script>
+
+</html>
+
+<!-- cp test/html/index.html /usr/local/nginx/html -->
